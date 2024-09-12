@@ -124,11 +124,18 @@
         )
 
         resultado.innerHTML = `<br>
-        PROJEÇÃO ATUAL:<br>
+        <h3>PROJEÇÃO ATUAL:</h3>
+        Segundo o EPAMIG (Empresa de Pesquisa Agropecuária de Minas Gerais), existem diversos defeitos causados por fatores de temperatura e umidade,<br>
+        sendo necessário um controle adequado dos mesmos para alcancar o ponto ideal do queijo e evitar perdas durante o processo.<br>
+        (O cálculo referente a lucratividade sem a nossa solução foi baseado no percentual de perda adquirido em pesquisas e artigos de queijarias e<br>
+        institutos voltados para agropecuária, você pode acessar parte dessas informações <a href="https://www.epamig.br/ilct/wp-content/uploads/2020/07/QUEIJO-MINAS-ARTESANAL-PRINCIPAIS-PROBLEMAS.pdf">aqui</a>).<br>
+        <br>
+        Utilizando a média de desperdício mensal de 15%:<br>
+        <br>
         No mês anterior, você lucrou aproximadamente: R$ ${lucratividadeMesAnterior}<br>
         No mês passado, você perdeu em sua produção aproximadamente: R$ ${estimativaPerdaMesAnterior}<br>
-        <br>
-        A projeção da sua lucratividade no próximo semestre sem a nossa solução seria:<br>
+        <h3>A projeção da sua lucratividade no próximo semestre SEM a nossa solução seria:</h3>
+        (O cálculo utilizado foi um exponencial da lucratividade (faturamento - custo) acrescentando a estimativa de perda anterior.)
         <br>
         Mês um: ${lucroMesUmF}<br>
         Mês dois: ${lucroMesDoisF}<br>
@@ -136,14 +143,10 @@
         Mês quatro: ${lucroMesQuatroF}<br>
         Mês cinco: ${lucroMesCincoF}<br>
         Mês seis: ${lucroMesSeisF}<br>
-        <br>
-        Segundo o EPAMIG (Empresa de Pesquisa Agropecuária de Minas Gerais), existem diversos defeitos causados por fatores de temperatura e umidade,<br>
-        sendo necessário um controle adequado dos mesmos para alcancar o ponto ideal do queijo e evitar perdas durante o processo.<br>
-        (O cálculo referente a lucratividade sem a nossa solução foi baseado no percentual de perda adquirido em pesquisas e artigos de queijarias e<br>
-        institutos voltados para agropecuária, você pode acessar parte dessas informações <a href="https://www.epamig.br/ilct/wp-content/uploads/2020/07/QUEIJO-MINAS-ARTESANAL-PRINCIPAIS-PROBLEMAS.pdf">aqui</a>).<br>
-        <br>
-        PROJEÇÃO COM NOSSA SOLUÇÃO:<br>
+        <h3>PROJEÇÃO COM NOSSA SOLUÇÃO:</h3>
         A projeção da sua lucratividade no próximo semestre seria:<br>
+        (O cálculo utilizado foi um exponencial da lucratividade (faturamento - custo) estimando que não haverão perdas com nossa solução.)
+        <br>
         <br>
         Mês um: ${lucroMesUmSolucaoF}<br>
         Mês dois: ${lucroMesDoisSolucaoF}<br>
